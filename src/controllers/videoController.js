@@ -56,7 +56,7 @@ export const postUpload = async (req, res) => {
       pageTitle: "Upload Video",
       errorMessage: error._message,
     });
-  }
+  } 
 };
 
 export const deleteVideo = async (req, res) => {
