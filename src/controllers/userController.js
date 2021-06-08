@@ -48,7 +48,7 @@ export const postLogin = async (req, res) => {
       errorMessage: "An account with this username does not exists.",
     });
   }
-  const ok = await bcrypt.compare(password, user.password);
+  const ok = await bcryptjs.compare(password, user.password);
   if (!ok) {
     return res.status(400).render("login", {
       pageTitle,
@@ -171,5 +171,39 @@ export const postEdit = async (req, res) => {
   req.session.user = updatedUser;
   return res.render("edit-profile",{pageTitle});
 };
+
+export const getChangePassword = (req, res) =>{
+  if(req.session.user.socialOnly=== true) {
+    return res.redirect("/");
+  }
+  return res.render("users/change-password", {pageTitle:"Change Password"});
+}
+
+export const postChangePassword = async(req, res) =>{
+  const {
+    session: {
+      user: { _id },
+    },
+    body: { oldPassword, newPassword, newPassword2 },
+  } = req;
+  const user = await User.findById(_id);
+  const ok = await bcryptjs.compare(oldPassword, user.password);
+  if(!ok){
+    return res.status(400).render("users/change-password", {
+      pageTitle:"Change Password", 
+      errorMessage:"The current password is inocrrect",
+    });
+  }
+  if (newPassword !== newPassword2) {
+    return res.status(400).render("users/change-password", {
+      pageTitle:"Change Password", 
+      errorMessage:"The password does not match the confirmation",
+    });
+  }
+  user.password = newPassword;
+  await user.save();
+  return res.redirect("/users/logout");
+
+}
 
 export const see = (req, res) => res.send("See User");
