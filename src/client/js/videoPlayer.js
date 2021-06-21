@@ -109,6 +109,25 @@ const handleEnded = () => {
   });
 };
 
+const handleKey = (event) => {
+  const key = event.code;
+  const fullscreen = document.fullscreenElement;
+  if (key === "Space" && video.paused) {
+    video.play();
+    psBtn.className = "fas fa-pause";
+  } else if (!video.paused && key === "Space") {
+    video.pause();
+    psBtn.className = "fas fa-play";
+  }
+  if (key === "KeyF" && !fullscreen) {
+    videoContainer.requestFullscreen();
+    fullScreenBtn.className = "fas fa-redo";
+  } else if (fullscreen && key === "Escape") {
+    document.exitFullscreen();
+    fullScreenBtn.className = "fas fa-expand";
+  }
+};
+
 playBtn.addEventListener("click", handlePlayClick);
 muteBtn.addEventListener("click", handleMuteClick);
 volumeRange.addEventListener("input", handleVolumeChange);
@@ -119,5 +138,5 @@ videoContainer.addEventListener("mousemove", handleMouseMove);
 videoContainer.addEventListener("mouseleave", handleMouseLeave);
 timeline.addEventListener("input", handleTimelineChange);
 fullScreenBtn.addEventListener("click", handleFullscreen);
-
+document.addEventListener("keydown", handleKey);
 
