@@ -42,7 +42,7 @@ const handleSubmit = async (event) => {
     textarea.value = "";
     const { newCommentId } = await response.json();
     addComment(text, newCommentId);
-    span2.addEventListener("click", ()=> handleDelete(span2));
+    
   }
 };
 
