@@ -27,9 +27,9 @@ block content
         small.video__createdAt=new Date(video.createdAt).toLocaleDateString("ko-kr", {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'})
         if String(video.owner._id) === String(loggedInUser._id)
             br
-            a(href=`${video.id}/edit`) Edit Video &rarr;
+            a(href=`${video.id}/edit`) Edit Video
             br
-            a(href=`${video.id}/delete`) Delete Video &rarr;
+            a(href=`${video.id}/delete`) Delete Video
     br        
     if loggedIn
         div.video__add-comments
