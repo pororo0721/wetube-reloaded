@@ -21,6 +21,7 @@ const addComment = (text, id) => {
   newComment.appendChild(span);
   newComment.appendChild(span2);
   videoComments.prepend(newComment);
+  location.reload();
 };
 
 const handleSubmit = async (event) => {
