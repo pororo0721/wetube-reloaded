@@ -7,7 +7,9 @@ const s3 = new aws.S3({
     accessKeyId: process.env.AWS_ID,
     secretAccessKey: process.env.AWS_SECRET
   }
-})
+});
+
+const isHeroku = process.env.NODE_ENV === "production";
 
 const s3ImageUploader = multerS3({
   s3: s3,
@@ -26,8 +28,9 @@ export const localsMiddleware = (req, res, next) =>{
     if(req.session.loggedIn){
         res.locals.loggedIn = true
     }
-    res.locals.siteName ="Wetube";
+    res.locals.siteName ="Nyangtube";
     res.locals.loggedInUser = req.session.user || {};
+    res.locals.isHeroku = isHeroku;
     next();
 };
 
@@ -54,7 +57,7 @@ export const protectorMiddleware = (req, res, next) => {
     limits:{
       fileSize: 30000000,
   },
-  storage:  s3ImageUploader,
+  storage: isHeroku ? s3ImageUploader : undefined,
 });
 
   export const videoUpload = multer({
@@ -62,5 +65,5 @@ export const protectorMiddleware = (req, res, next) => {
   limits: {
     fileSize: 100000000,
   },
-  storage: s3VideoUploader,
+  storage: isHeroku ? s3VideoUploader: undefined,
 });
