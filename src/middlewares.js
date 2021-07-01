@@ -9,11 +9,17 @@ const s3 = new aws.S3({
   }
 })
 
-const multerUploader = multerS3({
+const s3ImageUploader = multerS3({
   s3: s3,
-  bucket: 'nyangtube',
+  bucket: "nyangtube/images",
   acl: "public-read",
-})
+});
+
+const s3VideoUploader = multerS3({
+  s3: s3,
+  bucket: "nyangtube/videos",
+  acl: "public-read",
+});
 
 export const localsMiddleware = (req, res, next) =>{
     
@@ -48,7 +54,7 @@ export const protectorMiddleware = (req, res, next) => {
     limits:{
       fileSize: 30000000,
   },
-  storage: multerUploader,
+  storage:  s3ImageUploader,
 });
 
   export const videoUpload = multer({
@@ -56,5 +62,5 @@ export const protectorMiddleware = (req, res, next) => {
   limits: {
     fileSize: 100000000,
   },
-  storage: multerUploader,
+  storage: s3VideoUploader,
 });
