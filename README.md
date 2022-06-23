@@ -5,6 +5,7 @@
 
 ## Introduction
 This project is youtube clone coding. 
+You can upload and create videos like Youtube.
 
 
 ## Directory Structure
