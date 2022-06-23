@@ -1,14 +1,17 @@
 
 # Youtube Clone Coding
 
-This project is youtube clone coding. Through this project, I learned to build basic service CRUD using HTML,CSS and JS.
+This project is youtube clone coding. 
+Through this project, I learned to build basic service CRUD using HTML,CSS and JS.
 
-## Project Structure
+## Directory Structure
 ![Untitled-2022-03-26-2254](https://user-images.githubusercontent.com/79802132/175294564-c72ab1f4-f234-45b8-95e4-78eb352e2180.png)
 
 
 
-## 🛠 Stack
+## Installation
+
+
 
 ### Front-end
 
@@ -18,9 +21,9 @@ This project is youtube clone coding. Through this project, I learned to build b
 
 <img height="30" src="https://img.shields.io/badge/Nodejs-339933?style=for-the-badge&logo=Node.js&logoColor=white"/> <img height="30" src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=Express&logoColor=white"/> <img height="30" src="https://img.shields.io/badge/Mongodb-47A248?style=for-the-badge&logo=Mongodb&logoColor=white"/> <img height="30" src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=Heroku&logoColor=white"/> <img height="30" src="https://img.shields.io/badge/Amazon S3-569A31?style=for-the-badge&logo=Amazon-S3&logoColor=white"/>
 
-## ⚙ Features
+## Features
 
-### 🙎‍ Users
+### Users
 
 - [x] Join
 - [x] Log In / Log Out
@@ -30,7 +33,7 @@ This project is youtube clone coding. Through this project, I learned to build b
 - [x] User Authentication
 - [x] GitHub Login
 
-### 📺 Videos
+## Videos
 
 - [x] Video Upload
 - [x] Video Delete
@@ -41,7 +44,7 @@ This project is youtube clone coding. Through this project, I learned to build b
 - [x] AJAX Comments
 - [x] Delete Comments
 
-## 🚀 Deployment
+### Deployment
 
 - [x] Heroku
 - [x] AWS
