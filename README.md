@@ -1,6 +1,8 @@
 
 # Youtube Clone Coding
 
+![Hnet com-image (1)](https://user-images.githubusercontent.com/79802132/149350349-f0bb0698-265f-4ae7-938c-091facce3bc7.gif)
+
 ## Introduction
 This project is youtube clone coding. 
 Through this project, I learned to build basic service CRUD using HTML,CSS and JS.
@@ -9,13 +11,14 @@ Through this project, I learned to build basic service CRUD using HTML,CSS and J
 ![Untitled-2022-03-26-2254](https://user-images.githubusercontent.com/79802132/175294564-c72ab1f4-f234-45b8-95e4-78eb352e2180.png)
 
 
-
 ## Getting Started
 Clone the latest version of https://github.com/pororo0721/wetube-reloaded.git .
 
 ```bash
 npm start
 ```
+
+## Built With
 
 ### Front-end
 
@@ -55,4 +58,4 @@ npm start
 - [x] Mongo DB
 
 
-![Hnet com-image (1)](https://user-images.githubusercontent.com/79802132/149350349-f0bb0698-265f-4ae7-938c-091facce3bc7.gif)
+
