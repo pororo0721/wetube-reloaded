@@ -1,8 +1,9 @@
 
-📺Youtube Clone Coding
+# Youtube Clone Coding
 ========================
-https://nyangtube.herokuapp.com/
+This project is youtube clone coding. Through this project, I learned to build basic service CRUD using HTML,CSS and JS.
 
+## Project Structure
 ![Untitled-2022-03-26-2254](https://user-images.githubusercontent.com/79802132/175294564-c72ab1f4-f234-45b8-95e4-78eb352e2180.png)
 
 
