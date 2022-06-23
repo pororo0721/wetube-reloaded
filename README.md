@@ -1,6 +1,6 @@
 
 # Youtube Clone Coding
-========================
+
 This project is youtube clone coding. Through this project, I learned to build basic service CRUD using HTML,CSS and JS.
 
 ## Project Structure
