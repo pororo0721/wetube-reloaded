@@ -57,5 +57,13 @@ npm start
 - [x] AWS
 - [x] Mongo DB
 
+## To be supplemented
+
+- I made github login possible in user authentication while making the project, but it would be good to add other authentication logins such as Google.
+- It would be nice to add like and dislike buttons just like in YouTube.
+- It is possible to delete a comment after writing it, but it is not possible to edit it. It would be nice if this part was more secure.
+
+
+
 ## Link
 [Link](https://nyangtube.herokuapp.com/)
