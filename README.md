@@ -1,6 +1,7 @@
 
 # Youtube Clone Coding
 
+## Introduction
 This project is youtube clone coding. 
 Through this project, I learned to build basic service CRUD using HTML,CSS and JS.
 
@@ -9,9 +10,12 @@ Through this project, I learned to build basic service CRUD using HTML,CSS and J
 
 
 
-## Installation
+## Getting Started
+Clone the latest version of https://github.com/pororo0721/wetube-reloaded.git .
 
-
+```bash
+npm start
+```
 
 ### Front-end
 
@@ -33,7 +37,7 @@ Through this project, I learned to build basic service CRUD using HTML,CSS and J
 - [x] User Authentication
 - [x] GitHub Login
 
-## Videos
+### Videos
 
 - [x] Video Upload
 - [x] Video Delete
