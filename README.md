@@ -58,4 +58,4 @@ npm start
 - [x] Mongo DB
 
 ## Link
-[Link](https:/nyangtube.herokuapp.com)
+[Link](nyangtube.herokuapp.com)
