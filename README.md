@@ -5,7 +5,7 @@
 
 ## Introduction
 This project is youtube clone coding. 
-Through this project, I learned to build basic service CRUD using HTML,CSS and JS.
+
 
 ## Directory Structure
 ![Untitled-2022-03-26-2254](https://user-images.githubusercontent.com/79802132/175294564-c72ab1f4-f234-45b8-95e4-78eb352e2180.png)
@@ -56,6 +56,11 @@ npm start
 - [x] Heroku
 - [x] AWS
 - [x] Mongo DB
+
+## What I Learned
+- Through this project, I learned to build basic service CRUD using HTML,CSS and JS.
+- This project has improved my JS skills.
+- I was able to see the entire cycle of the front-end and back-end using JS.
 
 ## To be supplemented
 
